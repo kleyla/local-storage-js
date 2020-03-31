@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: url(./img/pixel-heart.png);
+  background-attachment: fixed;
+}
+:root {
+  --primary: #b3ffff;
+  --secondary: #6bb3b3;
+  --tertiary: #ffccf1;
+  --quaternary: #ffef99;
+  --quinary: #b3a874;
+}
+
+.container {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+.container h1 {
+  margin: 20px 0;
+  font-size: 50px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.six-columns {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.six-columns label {
+  /* width: 100%; */
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.six-columns form {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  resize: none;
+  padding: 10px;
+  background: var(--primary);
+  border-color: var(--secondary);
+}
+textarea:focus {
+  border-color: var(--secondary);
+}
+
+.btn {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: var(--tertiary);
+  border-color: var(--tertiary);
+  font-weight: bold;
+}
+.mis-tweets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--quaternary);
+  padding: 15px;
+}
+.mis-tweets li {
+  /* background: red; */
+  width: 100%;
+  margin-bottom: 10px;
+}
+.borrar-tweet {
+  color: red;
+  width: 10%;
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .row {
+    width: 90%;
+    flex-direction: column;
+  }
+  .six-columns {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
